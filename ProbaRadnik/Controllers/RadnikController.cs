@@ -10,13 +10,13 @@ namespace ProbaRadnik.Controllers
     public class RadnikController : Controller
     {
         // GET: Radnik
-        public ActionResult GetView()
-        {
-            Radnik radnik = new Radnik();
-            radnik.Ime = "Petar";
-            radnik.Prezime = "Petrovic";
-            radnik.Plata = 180000;
-            return View("RadnikView", radnik);
-        }
+        //public ActionResult GetView()
+        //{
+        //    Radnik radnik = new Radnik();
+        //    radnik.Ime = "Petar";
+        //    radnik.Prezime = "Petrovic";
+        //    radnik.Plata = 180000;
+        //    return View("RadnikView", radnik);
+        //}
     }
 }
