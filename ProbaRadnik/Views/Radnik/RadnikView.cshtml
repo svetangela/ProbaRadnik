@@ -1,0 +1,33 @@
+﻿@model ProbaRadnik.Models.Radnik
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RadnikView</title>
+</head>
+<body>
+    <div> 
+        <b>Detalji o radniku</b><br />
+        Ime i prezime radnika: @Model.Ime  @Model.Prezime <br />
+
+        @if (Model.Plata > 100000)
+        {
+            <span style="background-color:yellow">
+                Plata radnika: @Model.Plata.ToString("C")
+            </span>
+        }
+        else
+        {
+            <span style="background-color:green">
+                Plata radnika: @Model.Plata.ToString("C")
+            </span>
+        }
+
+    </div>
+</body>
+</html>
